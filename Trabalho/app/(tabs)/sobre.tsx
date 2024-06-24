@@ -15,7 +15,7 @@ export default function App() {
                 <View style={styles.container}>
                     <View style={styles.rectangle} > </View>
                     <View style={styles.overlay}>
-                        <Text style={styles.overlayText}>Localiza </Text>
+                        
                     </View>
                   
                     <Text style={styles.overlayText2} > Veja sua localização!
