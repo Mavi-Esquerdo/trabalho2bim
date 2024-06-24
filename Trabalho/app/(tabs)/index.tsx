@@ -1,6 +1,6 @@
 import React from 'react';
  
-import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
  
 import Sobre from './sobre';
  
@@ -16,18 +16,17 @@ export default function App() {
           <View style={styles.rectangle}>
             <View style={styles.rectangle} > </View>
             <View style={styles.overlay}>
-              <Text style={styles.overlayText}>Localiza </Text>
+              <Text style={styles.overlayText}>Ver minha Localização</Text>
             </View>
            
-            <Text style={styles.overlayText2} > Explore sem limites.
-            </Text>
-            <Text style={styles.overlayText3} >
-              seu guia confiável para onde quer que você vá. </Text>
+           
+
           </View >
-          <Text style={styles.text}> Descubra uma nova maneira de explorar o mundo ao seu redor com nosso aplicativo de localização.
-            Encontre lugares com facilidade, obtenha direções precisas e desfrute de uma navegação suave onde quer que esteja.</Text>
+          <Image source={require('../../assets/images/obaa.jpg')}></Image>
+          <Text style={styles.text}> O LocalTech é um aplicativo intuitivo que simplifica a localização, ajudando você a encontrar lugares próximos,
+             traçar rotas eficientes e descobr</Text>
           <TouchableOpacity style={styles.button} onPress={() => setPage('sobre')}>
-            <Text style={styles.buttonText}> Confira </Text>
+            <Text style={styles.buttonText}> Ver minha localização! </Text>
           </TouchableOpacity>
         </View >
       );
@@ -74,7 +73,7 @@ const styles = StyleSheet.create({
   overlayText: {
     position: 'absolute',
     fontWeight: 'bold',
-    fontSize: 40,
+    fontSize: 30,
     color: '#1B4965',
     marginTop: -440,
     marginRight: 300,
@@ -100,7 +99,7 @@ const styles = StyleSheet.create({
   },
  
   title: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: 'bold',
     color: '#1B4965',
     marginTop: 10,

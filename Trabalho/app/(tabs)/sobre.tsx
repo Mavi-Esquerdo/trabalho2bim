@@ -1,9 +1,10 @@
 import React from 'react';
  
-import { Text, View,  StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View,  StyleSheet, TouchableOpacity, Image } from 'react-native';
  
-import Sobre from './home';
- 
+import Sobre from '.';
+
+
 export default function App() {
  
     const [page, setPage] = React.useState('sobre');
@@ -16,13 +17,14 @@ export default function App() {
                     <View style={styles.overlay}>
                         <Text style={styles.overlayText}>Localiza </Text>
                     </View>
-                   
-                    <Text style={styles.overlayText2} > Experimente o poder da localização em tempo real a qualquer momento com nosso app.
+                  
+                    <Text style={styles.overlayText2} > Veja sua localização!
                     </Text>
-                    <Text style={styles.text}>  uma nova maneira de explorar o mundo ao seu redor com nosso aplicativo de localização.
-                        Encontre lugares com facilidade, obtenha direções precisas e desfrute de uma navegação suave onde quer que esteja.</Text>
+                    <Text style={styles.text}>  Latitude: 0.0
+                                                Longitude: 0.0
+                    </Text>
                     <TouchableOpacity style={styles.button} onPress={() => setPage('home')}>
-                        <Text style={styles.buttonText}> Clique aqui </Text>
+                        <Text style={styles.buttonText}> Obter Latitude e Longitude </Text>
                     </TouchableOpacity>
                 </View>
  
